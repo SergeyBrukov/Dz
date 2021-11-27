@@ -350,3 +350,177 @@ background-position: right;
 		margin-bottom: 0;
 	}
 }
+
+/* -------------------------------------------------- */
+
+h2{
+   font-size: 90px;
+   color: #ffffff;
+}
+
+/* ---------About---------- */
+.about__bg{
+   background-color: #00c3c3;
+}
+
+
+.about__container{
+   width: 100%;
+   min-height: 700px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+
+
+.about__content p{
+   font-size: 17px;
+   color: #ffffff;
+}
+
+/* ---------Servise--------- */
+.servise__bg{
+   background-color: #70beff;
+
+}
+
+.servise__container {
+   width: 100%;
+   min-height: 790px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.servise__menu {
+   display: flex;
+   flex-direction: column;
+   
+}
+
+
+
+.button{
+   width: 400px;
+   height: 99px;
+
+   margin: 10px 100px;
+   background: #ffff;
+   box-shadow: -1px 3px 4px 0px #00000094;
+
+   text-align: center;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.button span{
+   width: 300px;
+   font-size: 20px;
+   line-height: 27px;
+   color: #262626;
+   font-weight: 700;
+}
+
+.button img{
+  padding: 23px;
+}
+
+
+
+.servise__content img {
+   position: relative;
+   top: 100px;
+}
+
+.servise__content h2{ 
+   position: relative;
+   top: -330px;
+}
+
+/* -------footer--------- */
+/* contact */
+footer {
+   width: 100%;
+   min-height: 958px;
+
+   background-image: url(/img/bg_footer.png);
+   background-repeat: repeat;
+   background-size: 100%;
+   -webkit-background-size: 100%;
+}
+
+.contact__heading {
+   margin: 0 auto;
+   max-width: 370px;
+}
+.contact__heading h2{
+   color: #262626;
+   font-weight: 700;
+   padding: 99px 0 46px 0;
+}
+
+.contact__heading p{
+   font-size: 17px;
+   text-align: center;
+   line-height: 25px;
+}
+
+
+.contact__inf {
+   display: flex;
+   justify-content: space-between;
+}
+
+.form {
+   min-width: 500px;
+   margin: 45px 70px 105px 15px;
+   display: flex;
+   flex-direction: column;
+
+}
+.form input{
+margin-bottom: 15px;
+}
+
+.form--height{
+   height: 50px;
+}
+
+textarea{
+   height: 253px;
+}
+
+.info {
+}
+
+
+/* footer */
+.footer__bg{
+   background-color:#262626;
+}
+
+.footer__container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer__container p{
+   color: #b9b9b9;
+   font-size: 15px;
+}
+
+.footer__bg .logo__small{
+   font-family: 'Pacifico', cursive;
+   font-size: 25px;
+   line-height: 25px;
+}
+
+.red--text{
+   color: #ff2b58;
+   font-weight: 700;
+}

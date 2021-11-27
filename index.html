@@ -1,86 +1,185 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
-		<title></title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="header__container">
-					<a href="#" class="header__logo">Cahee</a>
-					<div class="header__menu menu">
-						<div class="menu__icon">
-							<span></span>
-						</div>
-						<nav class="menu__body" id="menu">
-							<ul class="menu__list">
-								<li><a data-goto=".page__section_1" href="#" class="menu__link">HOME</a></li>
-								<li><a data-goto=".page__section_2" href="#" class="menu__link">ABOUT</a></li>
-								<li><a data-goto=".page__section_3" href="#" class="menu__link">SERVICES</a></li>
-								<li><a data-goto=".page__section_1" href="#section__gallery" class="menu__link">GALLERY</a></li>
-								<li><a data-goto=".page__section_2" href="#" class="menu__link">BLOG</a></li>
-								<li><a data-goto=".page__section_3" href="#" class="menu__link">CONTACT</a></li>
-							</ul>
-						</nav>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title></title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">Cahee</a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body" id="menu">
+						<ul class="menu__list">
+							<li><a data-goto=".page__section_1" href="#" class="menu__link">HOME</a></li>
+							<li><a data-goto=".page__section_2" href="#about__container" class="menu__link">ABOUT</a></li>
+							<li><a data-goto=".page__section_3" href="#" class="menu__link">SERVICES</a></li>
+							<li><a data-goto=".page__section_4" href="#section__gallery" class="menu__link">GALLERY</a></li>
+							<li><a data-goto=".page__section_5" href="#" class="menu__link">BLOG</a></li>
+							<li><a data-goto=".page__section_6" href="#" class="menu__link">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="haeder__info">
+				<div class="info__text">
+					<h2 class="title">Fresh Life</h2>
+					<p class="all__info">Sed do eiusmod tempor incididunt ut labore et <br>
+						dolore magna aliqua.Ut enim ad minim veniam,<br>
+						quis nostrud exercitation ullamco.</p>
+				</div>
+				<button type="submit" class="info__btn">GET FREE NOW</button>
+			</div>
+			<div class="scroll">
+				<img src="/img/scroll.svg" alt="">
+			</div>
+		</header>
+		<section class="section__gallery" id="section__gallery">
+			<div class="container__gallery">
+				<div class="gallery__text">
+					<h3 class="gallery__title">Gallery</h3>
+					<p class="gallery__info">
+						Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
+						ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+				<div class="gallery__items">
+					<div class="gallery__item gallery__item_big">
+						<img src="/img/f1.png" alt="">
+					</div>
+					<div class="gallery__item ">
+						<img src="/img/f2.png" alt="">
+					</div>
+					<div class="gallery__item ">
+						<img src="/img/f3.png" alt="">
 					</div>
 				</div>
-				<div class="haeder__info">
-					<div class="info__text">
-						<h2 class="title">Fresh Life</h2>
-						<p class="all__info">Sed do eiusmod tempor incididunt ut labore et <br>
-							dolore magna aliqua.Ut enim ad minim veniam,<br>
-							quis nostrud exercitation ullamco.</p>
+				<div class="grid__dop">
+					<div class="gallery__item gallery__item_average ">
+						<img src="/img/f4.png" alt="">
 					</div>
-					<button type="submit" class="info__btn">GET FREE NOW</button>
-				</div>
-				<div class="scroll">
-					<img src="/img/scroll.svg" alt="">
-				</div>
-			</header>
-			<section class="section__gallery" id="section__gallery">
-				<div class="container__gallery">
-					<div class="gallery__text">
-						<h3 class="gallery__title">Gallery</h3>
-						<p class="gallery__info">
-							Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>
-							 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
-							  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
-					</div>
-					<div class="gallery__items">
-						<div class="gallery__item gallery__item_big">
-							<img src="/img/f1.png" alt="">
-						</div>
-						<div class="gallery__item " >
-							<img src="/img/f2.png" alt="">
-						</div>
-						<div class="gallery__item ">
-							<img src="/img/f3.png" alt="">
-						</div>
-					</div>
-					<div class="grid__dop">
-						<div class="gallery__item gallery__item_average ">
-							<img src="/img/f4.png" alt="">
-						</div>
-						<div class="gallery__item gallery__item_average">
-							<img src="/img/f5.png" alt="">
-						</div>
-					</div>
-					<div class="btn__gallery">
-						<button type="submit" class="btn__view">VIEW MORE</button>
+					<div class="gallery__item gallery__item_average">
+						<img src="/img/f5.png" alt="">
 					</div>
 				</div>
-			</section>
+				<div class="btn__gallery">
+					<button type="submit" class="btn__view">VIEW MORE</button>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="about__bg" id="about__container">
+			<div class="about__container wrapper">
+				<img src="img/raspberry.svg" alt="">
+
+				<div class="about__content">
+					<h2>About Us</h2>
+					<p>
+						Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip
+						ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+					</p>
+					<p>
+						Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+						doloremque
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+					</p>
+				</div>
+			</div>
 		</div>
-		<script src="js/script.js"></script>
-	</body>
+
+		<div class="servise__bg">
+			<div class="servise__container wrapper ">
+
+				<div class="servise__menu">
+					<a href="#" class="button">
+						<span>Online Shopping</span>
+						<img src="img/basket.svg" alt="">
+					</a>
+
+					<a href="#" class="button">
+						<span>Quality Product</span>
+						<img src="img/hand.svg" alt="">
+					</a>
+
+					<a href="#" class="button">
+						<span>Domestic & International Deliver</span>
+						<img src="img/planet.svg" alt="">
+					</a>
+
+					<a href="#" class="button">
+						<span>Well Organized</span>
+						<img src="img/carrot.svg" alt="">
+					</a>
+				</div>
+
+				<div class="servise__content">
+					<img src="img/tomato.svg" alt="">
+					<h2>Our Services</h2>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="contact__container wrapper">
+				<div class="contact__heading">
+					<h2>Contact</h2>
+					<p>
+						For new projects, ideas, business or anything
+						you'd like to discuss, contact with me!
+					</p>
+				</div>
+
+				<div class="contact__inf">
+
+
+					<form class="form" action="#" method="get">
+						<input class="form--height" type="text" name="" id="">
+						<input class="form--height" type="email" name="" id="">
+						<input class="form--height" type="tel" name="" id="">
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</form>
+
+
+					<div class="info">
+						<h4>ADDRESS</h4>
+						<p>123 City name, Street, City, Country</p>
+						<h4>EMAIL</h4>
+						<p>cahee@domain.com</p>
+						<h4>PHONE</h4>
+						<p>+012 345 6789</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="footer__bg">
+				<div class="footer__container wrapper">
+					<p>© 2015 Company. All right reserv</p>
+					<p class="logo__small">Cahee</p>
+					<p>Made with <span class="red--text">love</span> by Auskteez</p>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
 </html>
