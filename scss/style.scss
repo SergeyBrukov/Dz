@@ -326,3 +326,14 @@
     }
 }
 ///adaptiv////
+
+
+///adaptiv--subscribe-to-us///////
+@media(max-width: px) {
+    .gallery__items{
+        grid-template-columns: none;
+    }
+    .header__container{
+        align-items:normal;
+    }
+}
