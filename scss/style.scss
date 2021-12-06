@@ -278,12 +278,61 @@ body{
 
 ///adaptiv////
 @media(max-width: 768px) {
-    .gallery__items{
-        grid-template-columns: none;
-    }
-    .header__container{
-        align-items:normal;
-    }
+   .gallery__items{
+      grid-template-columns: none;
+   }
+   
+	.header__container{
+      align-items:normal;
+   }
+
+	.about{
+		&__container{
+			flex-direction: column-reverse;
+			justify-content: center;
+			img{
+				max-width: 350px;
+				padding: 0;
+			}
+		}
+		&__content{
+			h2{
+				text-align: center;
+			}
+		}
+	}
+
+	.servise{
+		&__container{
+			flex-direction: column-reverse;
+			justify-content: center;
+			
+		}
+
+		&__content{
+			img{
+				display: none;
+			}
+			h2{
+				top: 0;
+				padding-bottom: 15px;
+				text-align: center;
+			}
+		}
+	}
+
+
+	.contact{
+		&__inf{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__info{
+			display: none;
+		}
+	}
 }
 @media(max-width: 320px) {
     .info__text{
