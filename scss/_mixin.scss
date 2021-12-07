@@ -1,0 +1,53 @@
+$var1: #262626;
+$var2: #fafafa;
+$var3: #96b92c;
+$var4: #ffffff;
+$var5: #b07cf7;
+$var6: #f72b3b;
+
+
+@mixin button {
+    width: 200px;
+	height: 55px;
+	margin-bottom: 120px;
+	box-shadow: 0px 2px 2.5px rgba(0,0,0,0.5);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
+	font-weight: 300;
+	font-family: "Raleway";
+}
+
+@mixin btn__hover {
+        background-color: #70bfff;
+        box-shadow: 0px 15px 20px #70bfff;
+        color: #fff;
+        transform: translateY(-7px);
+}
+
+@mixin btn__hover-servis{
+	background: radial-gradient(#fff, #0e91fe);
+   box-shadow: 0px 15px 20px rgba(0, 86, 157, 0.63);
+   transform: translateY(-7px);
+}
+
+@mixin btn__active {
+    top: 3px;
+    transition: box-shadow 0.5s ease 0s;
+    box-shadow: 0 2px 0 #1708eb;
+}
+
+@mixin container{
+   max-width: 1200px;
+	margin: 0px auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@mixin form_focus{
+	background-color: $color-turquoise;
+   border-left: 5px solid $color-border-form;
+}
