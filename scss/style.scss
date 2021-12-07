@@ -327,94 +327,16 @@
 }
 ///adaptiv////
 
-///////subscribe to us//////
-
-body {
-	margin: 0;
-	padding: 0;
-}
-/*------------------------------*/
-.subscribe_to_us{
-    max-width: 1200px;
-    margin: 0 auto;
-    background:  url(/img/bg.png) no-repeat ;
-    background-size: 100%; 
-    background-position: right;
-    height: 500px;
-    box-sizing: border-box;
-
-    padding: 141px 20px 10px 10px;
-
-
-}
-.subscribe_to_us__header{
-    font-size: 40px;
-    line-height: 27px;
-    color: $var1;
-    font-weight: 700;;
-    text-align: right;
-}
-.subscribe_to_us__paragraph{
-    width: 572px;
-    height: 50px;
-    font-size: 17px;
-    line-height: 27px;
-    color: $var1;
-    font-weight: 300;
-
-    margin-top: 32px;
-}
-.subscribe_to_mailings{
-    padding: 0;
-    margin: 25px auto;
-}
-.subscribe_to_mailings__input{
-    padding-left: 10px;
-}
-.your_email_adress{
-    width: 570px;
-    height: 55px;
-    background-color: #fafafa;
-    border:0;
-    border-color: black;
-    box-shadow:0 0 4px rgba(0,0,0,0.3);
-    transition: .3s box-shadow;
-}
-.your_email_adress:hover {
-    box-shadow:0 0 4px rgba(0,0,0,0.5);
-}
-.confirm_your_email_adress{
-    width: 170px;
-    height: 55px;
-    background-color: #96b92c;
-    border-radius: 5px;
-    border-color: #96b92c;
-
-    font-size: 20px;
-    line-height: 27px;
-    color: #ffffff;
-    font-weight: 300;
-    transition: box-shadow 0.3s ;
-
-    margin-left: 30px;
-} 
-
-.confirm_your_email_adress:hover{
-    color: black;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-    padding: 10px;
-}
-/*---------------------------------*/
-
-
 /*------------------subscribe_to_us---------*/
 .subscribe_to_us {
-	@include container;
+	max-width: 1200px;
+	margin: 0 auto;
 	background: url(/img/bg.png);
 	background-size: 100%;
 	background-position: right;
-	height: 500px;
-	padding: 141px 20px 10px 10px;
+	min-height: 500px;
+	box-sizing: border-box;
+	padding-top: 10%;
 	&__header {
 		font-size: 40px;
 		line-height: 27px;
@@ -423,50 +345,43 @@ body {
 		text-align: right;
 	}
 	&__paragraph {
-		width: 572px;
-		height: 50px;
+		max-width: 572px;
+		min-height: 50px;
 		font-size: 17px;
 		line-height: 27px;
 		color: $var1;
 		font-weight: 300;
-		margin-top: 32px;
+		margin-top: 3%;
 	}
-}
-.subscribe_to_mailings {
-	padding: 0;
-	margin: 25px auto;
-	&__input {
-		padding-left: 10px;
-	}
-}
-.your_email_adress {
-	width: 570px;
-	height: 55px;
-	background-color: $var2;
-	border: 0;
-	border-color: $var1;
-	box-shadow: 0 0 4px rgba(0,0,0,0.3);
-	transition: .3s box-shadow;
-	&:hover {
-		box-shadow: 0 0 4px rgba(0,0,0,0.5);
-	}
-}
-.confirm_your_email_adress {
-	width: 170px;
-	height: 55px;
-	background-color: $var3;
-	border-radius: 5px;
-	border-color: $var3;
-	font-size: 20px;
-	line-height: 27px;
-	color: $var4;
-	font-weight: 300;
-	transition: box-shadow 0.3s ;
-	margin-left: 30px;
-	&:hover {
-		color: $var1;
-		box-shadow: 0 0 10px rgba(0,0,0,0.5);
-		padding: 10px;
+	&__form {
+		padding: 0;
+		margin: 1% auto;
+		&--input {
+			width: 570px;
+			height: 55px;
+			background-color: $var2;
+			border: 0;
+			border-color: $var1;
+			box-shadow: 0 0 4px rgba(0,0,0,0.3);
+			transition: .3s box-shadow;
+			&:hover {
+				box-shadow: 0 0 4px rgba(0,0,0,0.5);
+			}
+		}
+		&--button {
+			@include button;
+			background-color: $var3;
+			border-radius: 5px;
+			border-color: $var3;
+			color: $var4;
+			transition: box-shadow 0.3s ;
+			margin-left: 30px;
+			&:hover {
+				color: $var1;
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				padding: 10px;
+			}
+		}
 	}
 }
 
@@ -475,7 +390,7 @@ body {
 /*-----------------blog------------*/
 .blog {
 	width: 100%;
-	max-height: 862px;
+	min-height: 800px;
 	margin: 0 auto;
 	background-color: $var5;
 	box-sizing: border-box;
@@ -495,7 +410,7 @@ body {
 	&__header {
 		font-size: 90px;
 		line-height: 25px;
-		color: $var4;
+		color: $var2;
 		font-weight: 700;
 	}
 	&__paragraph {
@@ -503,20 +418,23 @@ body {
 		height: 63px;
 		font-size: 17px;
 		line-height: 25px;
-		color: $var4;
+		color: $var2;
 		font-weight: 300;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 25px;
 	}
+	&__button {
+		@include button;
+		background-color: $var6;
+		margin-bottom: 120px;
+		&:hover {
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			padding: 10px;
+		}
+	}
 }
-img {
-	height: 100%;
-	width: 100%;
-}
-.cover {
-	object-fit: cover;
-}
+
 .box {
 	width: 370px;
 	height: 310px;
@@ -528,16 +446,21 @@ img {
 		box-shadow: 0 0 10px rgba(0,0,0,0.5);
 		border: none;
 	}
-	&__date_header {
+	&__img{
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+	&__header {
 		font-size: 30px;
 		line-height: 25px;
-		color: $var4;
+		color: $var2;
 		font-weight: 700;
 		position: absolute;
 		top: -20px;
 		left: 20px;
 	}
-	&_part {
+	&__date {
 		background: rgba(0, 0, 0, 0.7);
 		width: 60px;
 		height: 60px;
@@ -550,13 +473,13 @@ img {
 		&_number {
 			font-size: 32px;
 			line-height: 25px;
-			color: $var4;
+			color: $var2;
 			font-weight: 700;
 		}
-		&_date {
+		&_month {
 			font-size: 21px;
 			line-height: 25px;
-			color: $var4;
+			color: $var2;
 		}
 	}
 	&__paragraph {
@@ -564,17 +487,17 @@ img {
 		height: 79px;
 		font-size: 20px;
 		line-height: 25px;
-		color: $var4;
+		color: $var2;
 		font-weight: 700;
 		text-align: left;
 		position: absolute;
 		top: 200px;
 		left: 20px;
 	}
-	&__date__publishing {
+	&__publishing {
 		font-size: 13px;
 		line-height: 25px;
-		color: $var4;
+		color: $var2;
 		font-weight: 400;
 		position: absolute;
 		top: 275px;
@@ -584,17 +507,9 @@ img {
 		position: absolute;
 	}
 }
-.button_view_more {
-	background-color: $var6;
-	margin-bottom: 120px;
-	&:hover {
-		box-shadow: 0 0 10px rgba(0,0,0,0.5);
-		padding: 10px;
-	}
-}
 
 /*---------adaptiv blog---------------*/
-@media(max-width: 1280px) {
+/* @media(max-width: 1280px) {
 	.box{
     margin-top: 30px;
   }
@@ -624,3 +539,4 @@ img {
     margin-top: 20px;
     }
 }
+ */
