@@ -855,8 +855,10 @@ body {
   border-color: #262626;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition: .3s box-shadow;
-  transition: .3s box-shadow;
+  -webkit-transition: 0.3s -webkit-box-shadow;
+  transition: 0.3s -webkit-box-shadow;
+  transition: 0.3s box-shadow;
+  transition: 0.3s box-shadow, 0.3s -webkit-box-shadow;
 }
 
 .subscribe_to_us__form--input:hover {
@@ -980,10 +982,10 @@ body {
   position: relative;
   margin: 0 0 0 30px;
   border: 0;
-  -webkit-transition: -webkit-box-shadow .3s;
-  transition: -webkit-box-shadow .3s;
-  transition: box-shadow .3s;
-  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .box:hover {
@@ -1067,35 +1069,42 @@ body {
 }
 
 /*---------adaptiv blog---------------*/
-/* @media(max-width: 1280px) {
-	.box{
+@media (max-width: 1280px) {
+  .box {
     margin-top: 30px;
   }
-  .your_email_adress{
-    width: 400px ;
+  .subscribe_to_us__form--input {
+    width: 400px;
   }
 }
 
-@media(max-width: 720px) {
-  .your_email_adress{
+@media (max-width: 720px) {
+  .subscribe_to_us__form--input {
     max-width: 300px;
-      }
-      .confirm_your_email_adress{
-        margin-left: 20px;
-        }
+  }
+  .subscribe_to_us__form--button {
+    margin-left: 20px;
+  }
 }
 
-@media(max-width: 640px) {
-  .your_email_adress{
+@media (max-width: 640px) {
+  .subscribe_to_us__form--input {
     max-width: 300px;
-      }
+  }
 }
 
-@media(max-width: 480px) {
-  .confirm_your_email_adress{
+/*
+@media (max-width: 480px) {
+  .subscribe_to_us__form--button {
     margin-left: 0px;
     margin-top: 20px;
-    }
+  }
 }
- */
+
+@media (max-width: 480px) {
+  .subscribe_to_us__form--input {
+    max-width: 150px;
+  }
+}
+*/
 /*# sourceMappingURL=style.css.map */
