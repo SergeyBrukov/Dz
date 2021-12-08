@@ -277,6 +277,9 @@ body{
 /////burger////
 
 ///adaptiv////
+
+
+
 @media(max-width: 768px) {
    .gallery__items{
       grid-template-columns: none;
@@ -286,8 +289,6 @@ body{
       align-items:normal;
    }
 
-
-	
 	.about{
 		&__container{
 			flex-direction: column-reverse;
@@ -308,17 +309,14 @@ body{
 		&__container{
 			flex-direction: column-reverse;
 			justify-content: center;
-			
 		}
 
-		&__btn span{
-margin: 20px;
-		}
 
 		&__content{
 			img{
 				display: none;
 			}
+
 			h2{
 				top: 0;
 				padding-bottom: 15px;
@@ -327,8 +325,11 @@ margin: 20px;
 		}
 	}
 
-
 	.contact{
+		&__form{
+			margin: 0;
+		}
+
 		&__inf{
 			flex-direction: column;
 			justify-content: center;
@@ -337,6 +338,26 @@ margin: 20px;
 
 		&__info{
 			display: none;
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.footer__container{
+		flex-direction: column;
+		justify-content: space-evenly;
+		min-height: 100px;
+
+		p{
+			font-size: 12px;
+		}
+	}
+}
+
+@media(max-width: 536px) {
+	.contact{
+		&__form {
+			min-width: 400px;
 		}
 	}
 }
@@ -389,11 +410,21 @@ margin: 20px;
 }
 
 @media(max-width: 425px) {
-    .header{
-        min-height:700px;
-    }
-    .haeder__info{
-        margin-top: 150px;
-    }
+   .header{
+      min-height:700px;
+   }
+   .haeder__info{
+      margin-top: 150px;
+   }
+
+	.contact{
+		&__form {
+			min-width: 350px;
+
+			textarea{
+				min-height: 200px;
+			}
+		}
+	}
 }
 ///adaptiv////

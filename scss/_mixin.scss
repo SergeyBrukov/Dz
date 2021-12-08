@@ -43,3 +43,9 @@
 	background-color: $color-turquoise;
    border-left: 5px solid $color-border-form;
 }
+/*флекс для  about servise servise__btn foter*/
+@mixin flex {
+	display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
