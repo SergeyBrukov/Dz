@@ -286,6 +286,8 @@ body{
       align-items:normal;
    }
 
+
+	
 	.about{
 		&__container{
 			flex-direction: column-reverse;
@@ -307,6 +309,10 @@ body{
 			flex-direction: column-reverse;
 			justify-content: center;
 			
+		}
+
+		&__btn span{
+margin: 20px;
 		}
 
 		&__content{
@@ -334,6 +340,8 @@ body{
 		}
 	}
 }
+
+
 @media(max-width: 320px) {
     .info__text{
         .title{
