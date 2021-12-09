@@ -388,6 +388,9 @@ body{
         margin-bottom: 0;
         margin-top: 10px;
     }
+
+	
+	
 }
 
 @media(max-width: 375px) {
@@ -407,6 +410,10 @@ body{
         margin-bottom: 0;
         margin-top: 10px;
     }
+
+	h2{
+		font-size: 70px;
+	}
 }
 
 @media(max-width: 425px) {
@@ -419,12 +426,22 @@ body{
 
 	.contact{
 		&__form {
-			min-width: 350px;
+			min-width: 250px;
 
 			textarea{
-				min-height: 200px;
+				min-height: 100px;
 			}
 		}
 	}
+
+	.servise{
+		&__btn{
+			span{
+				padding: 0 35px;
+				margin: 10px 0px;
+			}
+		}
+	}
+	
 }
 ///adaptiv////

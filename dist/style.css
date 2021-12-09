@@ -841,6 +841,9 @@ body {
     margin-bottom: 0;
     margin-top: 10px;
   }
+  h2 {
+    font-size: 70px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -851,10 +854,14 @@ body {
     margin-top: 150px;
   }
   .contact__form {
-    min-width: 350px;
+    min-width: 250px;
   }
   .contact__form textarea {
-    min-height: 200px;
+    min-height: 100px;
+  }
+  .servise__btn span {
+    padding: 0 35px;
+    margin: 10px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
