@@ -145,7 +145,7 @@ h2 {
           align-items: center;
   max-width: 400px;
   height: 99px;
-  margin: 10px 50px;
+  margin: 10px 10px;
   background: #ffff;
   -webkit-box-shadow: -1px 3px 4px 0px #00000094;
           box-shadow: -1px 3px 4px 0px #00000094;
@@ -797,6 +797,9 @@ body {
   .contact__form {
     min-width: 400px;
   }
+  .servise__btn span {
+    padding: 0 35px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -858,10 +861,6 @@ body {
   }
   .contact__form textarea {
     min-height: 100px;
-  }
-  .servise__btn span {
-    padding: 0 35px;
-    margin: 10px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

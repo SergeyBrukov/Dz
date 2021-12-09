@@ -360,6 +360,15 @@ body{
 			min-width: 400px;
 		}
 	}
+
+	.servise{
+		&__btn{
+			span{
+				padding: 0 35px;
+				
+			}
+		}
+	}
 }
 
 
@@ -434,14 +443,6 @@ body{
 		}
 	}
 
-	.servise{
-		&__btn{
-			span{
-				padding: 0 35px;
-				margin: 10px 0px;
-			}
-		}
-	}
 	
 }
 ///adaptiv////
