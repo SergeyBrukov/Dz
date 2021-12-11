@@ -814,14 +814,14 @@ body {
 /*------------------subscribe_to_us---------*/
 .subscribe_to_us {
   max-width: 1200px;
+  max-height: 600px;
   margin: 0 auto;
   background: url(/img/bg.png) no-repeat;
   background-size: 100%;
   background-position: right;
-  min-height: 500px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 10%;
+  padding-top: 140px;
 }
 
 .subscribe_to_us__header {
@@ -830,6 +830,7 @@ body {
   color: #262626;
   font-weight: 700;
   text-align: right;
+  margin-left: 20px;
 }
 
 .subscribe_to_us__paragraph {
@@ -839,12 +840,14 @@ body {
   line-height: 27px;
   color: #262626;
   font-weight: 300;
-  margin-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 20px;
 }
 
 .subscribe_to_us__form {
   padding: 0;
-  margin: 1% auto;
+  margin-left: 20px;
 }
 
 .subscribe_to_us__form--input {
@@ -902,13 +905,13 @@ body {
 /*-----------------blog------------*/
 .blog {
   width: 100%;
-  min-height: 800px;
+  min-height: 400px;
   margin: 0 auto;
   background-color: #b07cf7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 8%;
   text-align: center;
+  padding-top: 100px;
 }
 
 .blog__receipts {
@@ -924,7 +927,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 45px;
   margin-bottom: 45px;
 }
 
@@ -940,7 +942,7 @@ body {
 }
 
 .blog__paragraph {
-  width: 570px;
+  max-width: 570px;
   height: 63px;
   font-size: 17px;
   line-height: 25px;
@@ -952,40 +954,43 @@ body {
 }
 
 .blog__button {
-  width: 200px;
-  height: 55px;
-  margin-bottom: 120px;
-  -webkit-box-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  font-size: 20px;
-  line-height: 27px;
-  color: #ffffff;
-  font-weight: 300;
-  font-family: "Raleway";
   background-color: #f72b3b;
-  margin-bottom: 120px;
+  margin: 0 0 120px 0;
 }
 
 .blog__button:hover {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  background: radial-gradient(#c71585, #c71585);
+  -webkit-box-shadow: 0px 15px 20px #9400d3;
+          box-shadow: 0px 15px 20px #9400d3;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.blog__button:active {
+  top: 3px;
+  -webkit-transition: -webkit-box-shadow 0.5s ease 0s;
+  transition: -webkit-box-shadow 0.5s ease 0s;
+  transition: box-shadow 0.5s ease 0s;
+  transition: box-shadow 0.5s ease 0s, -webkit-box-shadow 0.5s ease 0s;
+  -webkit-box-shadow: 0 2px 0 #1708eb;
+          box-shadow: 0 2px 0 #1708eb;
+  -webkit-box-shadow: 0 2px 0 #4b0082;
+          box-shadow: 0 2px 0 #4b0082;
 }
 
 .box {
   width: 370px;
   height: 310px;
   position: relative;
-  margin: 0 0 0 30px;
+  margin: 0 15px 0 15px;
   border: 0;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-top: 45px;
 }
 
 .box:hover {
@@ -994,11 +999,32 @@ body {
   border: none;
 }
 
-.box__img {
+.box__first-image {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
+  background: url(/img/first_picture_of_food.png) 0 0 no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(57%, rgba(142, 138, 138, 0.264041)), to(rgba(255, 255, 255, 0))), url(/img/first_picture_of_food.png);
+  background: linear-gradient(0deg, black 0%, rgba(142, 138, 138, 0.264041) 57%, rgba(255, 255, 255, 0) 100%), url(/img/first_picture_of_food.png);
+}
+
+.box__second-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(57%, rgba(142, 138, 138, 0.264041)), to(rgba(255, 255, 255, 0))), url(/img/second_picture_of_food.png);
+  background: linear-gradient(0deg, black 0%, rgba(142, 138, 138, 0.264041) 57%, rgba(255, 255, 255, 0) 100%), url(/img/second_picture_of_food.png);
+}
+
+.box__third-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(57%, rgba(142, 138, 138, 0.264041)), to(rgba(255, 255, 255, 0))), url(/img/third_picture_of_food.png);
+  background: linear-gradient(0deg, black 0%, rgba(142, 138, 138, 0.264041) 57%, rgba(255, 255, 255, 0) 100%), url(/img/third_picture_of_food.png);
 }
 
 .box__header {
@@ -1012,11 +1038,12 @@ body {
 }
 
 .box__date {
+  position: absolute;
   background: rgba(0, 0, 0, 0.7);
   width: 60px;
   height: 60px;
   border-radius: 5px;
-  margin-top: 50px;
+  top: 50px;
   padding: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1043,7 +1070,7 @@ body {
 
 .box__paragraph {
   max-width: 307px;
-  height: 79px;
+  min-height: 79px;
   font-size: 20px;
   line-height: 25px;
   color: #fafafa;
@@ -1069,42 +1096,60 @@ body {
 }
 
 /*---------adaptiv blog---------------*/
-@media (max-width: 1280px) {
-  .box {
-    margin-top: 30px;
-  }
+@media (max-width: 1024px) {
   .subscribe_to_us__form--input {
     width: 400px;
+  }
+  .subscribe_to_us__paragraph {
+    width: 400px;
+    font-size: 19px;
+  }
+  .subscribe_to_us__header {
+    font-size: 50px;
   }
 }
 
 @media (max-width: 720px) {
-  .subscribe_to_us__form--input {
-    max-width: 300px;
+  .subscribe_to_us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 80px;
+  }
+  .subscribe_to_us__paragraph {
+    margin: 20px;
   }
   .subscribe_to_us__form--button {
-    margin-left: 20px;
+    margin: 20px 100px 40px 0;
   }
 }
 
 @media (max-width: 640px) {
-  .subscribe_to_us__form--input {
-    max-width: 300px;
-  }
-}
-
-/*
-@media (max-width: 480px) {
   .subscribe_to_us__form--button {
-    margin-left: 0px;
     margin-top: 20px;
+    margin-right: 80px;
+  }
+  .blog__paragraph {
+    margin: 25px auto;
   }
 }
 
 @media (max-width: 480px) {
   .subscribe_to_us__form--input {
-    max-width: 150px;
+    width: 250px;
+  }
+  .subscribe_to_us__paragraph {
+    width: 300px;
+    font-size: 20px;
+  }
+  .subscribe_to_us__header {
+    font-size: 40px;
+  }
+  .box {
+    size: 0.8%;
   }
 }
-*/
 /*# sourceMappingURL=style.css.map */

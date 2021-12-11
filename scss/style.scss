@@ -388,19 +388,21 @@ body {
 /*------------------subscribe_to_us---------*/
 .subscribe_to_us {
   max-width: 1200px;
+  max-height: 600px;
   margin: 0 auto;
   background: url(/img/bg.png) no-repeat;
   background-size: 100%;
   background-position: right;
-  min-height: 500px;
   box-sizing: border-box;
-  padding-top: 10%;
+  padding-top: 140px;
   &__header {
     font-size: 40px;
     line-height: 27px;
     color: $var1;
     font-weight: 700;
     text-align: right;
+
+    margin-left: 20px;
   }
   &__paragraph {
     max-width: 572px;
@@ -409,11 +411,14 @@ body {
     line-height: 27px;
     color: $var1;
     font-weight: 300;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    margin-left: 20px;
   }
   &__form {
     padding: 0;
-    margin: 1% auto;
+    margin-left: 20px;
     &--input {
       width: 570px;
       height: 55px;
@@ -446,18 +451,17 @@ body {
 /*-----------------blog------------*/
 .blog {
   width: 100%;
-  min-height: 800px;
+  min-height: 400px;
   margin: 0 auto;
   background-color: $var5;
   box-sizing: border-box;
-  padding-top: 8%;
   text-align: center;
+  padding-top: 100px;
   &__receipts {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-top: 45px;
     margin-bottom: 45px;
   }
   &__text {
@@ -470,7 +474,7 @@ body {
     font-weight: 700;
   }
   &__paragraph {
-    width: 570px;
+    max-width: 570px;
     height: 63px;
     font-size: 17px;
     line-height: 25px;
@@ -481,12 +485,17 @@ body {
     margin-top: 25px;
   }
   &__button {
-    @include button;
+    transition: all 0.3s ease 0s;
     background-color: $var6;
-    margin-bottom: 120px;
+    margin: 0 0 120px 0;
     &:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      padding: 10px;
+      background: radial-gradient(#c71585, #c71585);
+      box-shadow: 0px 15px 20px #9400d3;
+      transform: translateY(-7px);
+    }
+    &:active {
+      @include btn__active;
+      box-shadow: 0 2px 0 #4b0082;
     }
   }
 }
@@ -495,17 +504,50 @@ body {
   width: 370px;
   height: 310px;
   position: relative;
-  margin: 0 0 0 30px;
+  margin: 0 15px 0 15px;
   border: 0;
   transition: box-shadow 0.3s;
+  margin-top: 45px;
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: none;
   }
-  &__img {
+  &__first-image {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    background: url(/img/first_picture_of_food.png) 0 0 no-repeat;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(142, 138, 138, 0.26404065043986347) 57%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(/img/first_picture_of_food.png);
+  }
+  &__second-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(142, 138, 138, 0.26404065043986347) 57%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(/img/second_picture_of_food.png);
+  }
+  &__third-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(142, 138, 138, 0.26404065043986347) 57%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(/img/third_picture_of_food.png);
   }
   &__header {
     font-size: 30px;
@@ -517,11 +559,12 @@ body {
     left: 20px;
   }
   &__date {
+    position: absolute;
     background: rgba(0, 0, 0, 0.7);
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    margin-top: 50px;
+    top: 50px;
     padding: 9px;
     display: flex;
     flex-wrap: wrap;
@@ -540,7 +583,7 @@ body {
   }
   &__paragraph {
     max-width: 307px;
-    height: 79px;
+    min-height: 79px;
     font-size: 20px;
     line-height: 25px;
     color: $var2;
@@ -565,40 +608,64 @@ body {
 }
 
 /*---------adaptiv blog---------------*/
-@media (max-width: 1280px) {
-  .box {
-    margin-top: 30px;
-  }
-  .subscribe_to_us__form--input {
-    width: 400px;
+@media (max-width: 1024px) {
+  .subscribe_to_us{
+    &__form--input{
+      width: 400px;
+    }
+    &__paragraph{
+      width: 400px;
+      font-size: 19px;
+    }
+    &__header{
+      font-size: 50px;
+    }
   }
 }
 
 @media (max-width: 720px) {
-  .subscribe_to_us__form--input {
-    max-width: 300px;
-  }
-  .subscribe_to_us__form--button {
-    margin-left: 20px;
+  .subscribe_to_us{
+    display: flex;
+    background-size: 100%;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    &__paragraph{
+      margin: 20px;
+    }
+    &__form--button{
+      margin: 20px 100px 40px 0;
+    } 
   }
 }
 
 @media (max-width: 640px) {
-  .subscribe_to_us__form--input {
-    max-width: 300px;
-  }
-}
-/*
-@media (max-width: 480px) {
   .subscribe_to_us__form--button {
-    margin-left: 0px;
     margin-top: 20px;
+    margin-right: 80px;
   }
+ .blog{
+    &__paragraph{
+      margin: 25px auto;
+    }
+  } 
+}
+@media (max-width: 480px) {
+  .subscribe_to_us{
+    &__form--input{
+      width: 250px;
+    }
+    &__paragraph{
+      width: 300px;
+      font-size: 20px;
+      
+    }
+    &__header{
+      font-size: 40px;
+    }
+  }
+  .box{
+    size: 0.8%;
+  }
+  
 }
 
-@media (max-width: 480px) {
-  .subscribe_to_us__form--input {
-    max-width: 150px;
-  }
-}
-*/
